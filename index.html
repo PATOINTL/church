@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St. Francis of Assisi Chaplaincy</title>
+    <link rel="stylesheet" href="style.css" /><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/st_francis" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Creating a Nav Bar -->
+  <nav class="nav_bar_container">
+    <div class="logo">
+      <a href="#"><img src="images/st_francis" alt="Church Logo" /></a>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Prayers</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="nav_toggle">
+      <button class="toggle_button" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <script>
+    document.querySelector('.toggle_button').addEventListener('click', function () {
+      document.querySelector('.navigation').classList.toggle('active');
+    });
+  </script>
+
+
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/st_francis" style="width: 100%; height: 50vh" />
+          <div class="text">Image 1</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/cross 1.jpg" style="width: 100%; height: 50vh" />
+          <div class="text">image 2</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/cross 2.jpg" style="width: 100%; height: 50vh" />
+          <div class="text">image 3</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+
+
+
+<div class="heading">
+  <p class="heading-content">Our Leaders</p>
+</div>
+
+<div class="container_cards">
+  <!-- Card 1 -->
+  <div class="container_card">
+    <div class="content">
+      <div class="image">
+        <img src="images/cross 1.jpg" alt="leader 1" class="image-leader">
+      </div>
+      <div class="profile">
+        <div class="name">
+          <p class="name-leader">Fr. Edward Akiii</p>
+        </div>
+        <div class="position">
+          <p class="role">Chaplaincy Leader</p>
+        </div>
+        <div class="contact">
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="container_card">
+    <div class="content">
+      <div class="image">
+        <img src="images/cross 2.jpg" alt="leader 2" class="image-leader">
+      </div>
+      <div class="profile">
+        <div class="name">
+          <p class="name-leader">Mrs Mbabazi Grace</p>
+        </div>
+        <div class="position">
+          <p class="role">Patroness</p>
+        </div>
+        <div class="contact">
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="container_card">
+    <div class="content">
+      <div class="image">
+        <img src="images/st_francis" alt="leader 3" class="image-leader">
+      </div>
+      <div class="profile">
+        <div class="name">
+          <p class="name-leader">Mr. Adyeeri Joseph</p>
+        </div>
+        <div class="position">
+          <p class="role">Chaplaincy Chairman</p>
+        </div>
+        <div class="contact">
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="container_card">
+    <div class="content">
+      <div class="image">
+        <img src="images/cross 1.jpg" alt="leader 4" class="image-leader">
+      </div>
+      <div class="profile">
+        <div class="name">
+          <p class="name-leader">Mss Hellen Amooti</p>
+        </div>
+        <div class="position">
+          <p class="role">Vice Chairman</p>
+        </div>
+        <div class="contact">
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="welcoming_verse">
+  <div class="the_verse_content">
+    <div class="the_verse">
+      <h4>
+        "I am the door. If anyone enters by me, <br />
+        he will be saved and will go in and out and find pasture."
+      </h4>
+      <button id="verse">John 10:9</button>
+    </div>
+    <div class="the_verse_image">
+      <img src="images/cross 2.jpg" alt="Biblical Image">
+    </div>
+  </div>
+</div>
+
+
+      <div class="leaders_images">
+        <div class="leader_one" id="leader_1"></div>
+        <div class="leader_one" id="leader_2"></div>
+        <div class="leader_one" id="leader_3"></div>
+      </div>
+
+      <div class="upcoming_event">
+        <h2>Upcoming-events</h2>
+        <div class="upcoming-events">
+          <div class="event">
+            <h3>Event Title 1</h3>
+            <p>Date: October 10, 2024</p>
+            <p>Location: City Conference Hall</p>
+            <a href="#" class="event-link">Learn more</a>
+          </div>
+
+          <div class="event">
+            <h3>Event Title 2</h3>
+            <p>Date: November 15, 2024</p>
+            <p>Location: Downtown Plaza</p>
+            <a href="#" class="event-link">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 id="the_lords">greet</h1>
+        <p id="greeting">
+May His grace fill your hearts as we celebrate together. Let us unite in prayer, offering our praise and thanksgiving to
+God. May His peace and blessings be with you now and always. Amen.
+        </p>
+        <button
+          id="greet"
+          onclick="document.getElementById('the_lords').innerHTML='Good evening'"
+        >
+          Say your today's Greeting
+        </button>
+      </div>
+      
+
+
+
+<footer class="ft_container">
+  <div class="footer-content">
+    <div class="services">
+      <h2>Services</h2>
+      <hr />
+      <ul>
+        <li>Holy Eucharist</li>
+        <li>Confession</li>
+        <li>Baptism</li>
+        <li>Holy Matrimony</li>
+        <li>Anointing of the Sick</li>
+        <li>Offering</li>
+      </ul>
+    </div>
+    <div class="prayers">
+      <h2>Prayers</h2>
+      <hr />
+      <ul>
+        <li>Our Father</li>
+        <li>Hail Mary</li>
+        <li>Glory Be</li>
+        <li>Apostles' Creed</li>
+        <li>Act of Contrition</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <hr />
+      <p>Address: 123 Church Street, City, Country</p>
+      <p>Email: parish@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    <div class="social-media">
+      <a href="#" aria-label="Facebook">
+        <i class="material-icons">facebook</i>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <i class="material-icons">twitter</i>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <i class="material-icons">instagram</i>
+      </a>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="back-to-top">
+    <a href="#top">Back to Top ↑</a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Catholic Church. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</div>
+  </body>
+</html>

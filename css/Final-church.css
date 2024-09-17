@@ -1,0 +1,141 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(206, 200, 200);
+    
+
+}
+.up:hover{
+    transform: scale(1.06);
+}
+.left{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.middle{
+    flex:1;
+
+}
+.right{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navigation{
+    position: fixed;
+    width: 60px;
+    top: 60px;
+    left: 0;
+
+}
+.nav{
+    height: 65px;
+    background-color: rgb(9, 102, 216);
+    margin-bottom: 3px;
+} 
+.heading{
+    font-size: 80px;
+    margin-top: 68px;
+    color: rgb(133, 150, 170);
+    top: 70px;
+    display: flex;
+    font-weight: 800;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    margin-left: 75px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.heading-content{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   
+}
+img{
+    width: 50px;
+    align-items: center;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.nav:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.give{
+    background-color: rgb(32, 204, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: antiquewhite;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-width: 0;
+    transition: 0.15s;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100px;
+    font-weight: 700;
+    transition: 0.25s;
+
+}
+.give:active{
+    background-color: antiquewhite;
+    color: rgb(25, 156, 25);
+}
+.give:hover{
+    transform: scale(1.04);
+}
+.navigation-item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(19, 41, 207);
+    padding: 8px;
+    color: azure;
+    font-size: 750;
+}
+.navigation-item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.icon-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tooltip{
+    position: absolute;
+    background-color: rgb(73, 72, 72);
+    color: antiquewhite;
+    margin: 0;
+    opacity: 0;
+    padding: 5px 10px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    margin-left: 10px;
+    margin-top: 55px;
+
+}
+.icon-info:hover .tooltip{
+    opacity: 1;
+}
+body{
+    background-color: rgb(26, 47, 152);
+}
